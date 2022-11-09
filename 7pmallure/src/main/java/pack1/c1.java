@@ -13,6 +13,7 @@ public class c1 {
 		ChromeDriver ob= new ChromeDriver();
 		ob.get("http://www.google.com");
 		ob.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		ob.navigate().refresh();
 		System.out.println(ob.getTitle());//4
 		ob.findElementByLinkText("Images"); //4
 		Thread.sleep(3000);
